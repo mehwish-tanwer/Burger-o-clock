@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Premium Burgers in Karachi</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" href="style.css">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript Bundle (Includes Popper.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+ 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+         <style>
+            /* Apply background image to the body (whole page) */
+            body {
+                background-image: url('https://img.freepik.com/free-vector/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.jpg?t=st=1719392834~exp=1719396434~hmac=515e57bb67eb679351985cf241214fe3ebadce945799e6505bf3fc24a82960e8&w=826'); /* Link to your image */
+                background-size: cover; /* Makes the image cover the whole page */
+                background-position: center center; /* Center the image */
+                background-attachment: fixed; /* Keeps the background fixed when scrolling */
+                background-repeat: no-repeat; /* Prevents the image from repeating */
+                margin: 0; /* Remove default margin */
+                height: 100vh; /* Ensures the page takes full viewport height */
+            }
+ *{
+    margin: 2px;
+    padding: 1px;
+    gap: 0px;
+}
+
+header div h1{
+    justify-content: center ;
+}
+.modal-dialog {
+    max-width: 70%; 
+    margin: 2px;
+}
+
+.modal-content {
+    border-radius: 10px; 
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.input-group input {
+    border-radius: 20px;
+}
+
+
+
+.input-group button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav-tabs {
+            flex-wrap: nowrap; /* Prevent wrapping of tabs */
+            overflow-x: auto;  /* Enable horizontal scrolling */
+            margin-top: 10px; /* Adjust this as needed to control space */
+        }
+
+        .nav-tabs .nav-link {
+            white-space: nowrap; /* Prevent text wrapping */
+        }
+
+        .container{
+            margin-top: 20px; /* Adjust as necessary */
+
+        }
+
+     
+        html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: #007bff; /* Active tab background */
+    color: white; /* Active tab text color */
+}
+
+.tab-content {
+    margin-top: 30px; /* To give space below the sticky navbar */
+}
+
+.tab-pane {
+    padding: 20px;
+    margin-bottom: 50px; /* Some space to differentiate sections */
+}
+
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;  /* Ensure tabs stay above content */
+    background-color: white; /* Optional: Background color to avoid transparency */
+    padding: 10px 0; /* Optional: Adds space inside the sticky container */
+}
+
+ </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="d-flex gap-3" style="background-color: black;">
+            <button class="btn btn-warning"  type = "button" style="height: 60px; padding: 8px 16px;">
+            <i class="fa-solid fa-location-dot"> Change Branch</i>                    
+        </button>
+
+        <button class="btn btn-warning" type="button" style="height: 60px; padding: 8px 16px;">
+            <i  class="fa-solid fa-phone"> 021111529233</i>
+        </button>
+        
+        <div style="flex-grow: 1; display: flex; justify-content: center; align-items: center;">
+
+            
+            
+        </div>
+        
+        <div class="ms-auto">
+            <button  type="button" class="btn btn-warning">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+        
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <img src="logo/LOGO.webp" alt="Logo" style="height: 100px; margin-right: 10px;">
+    </div>
+    
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="First slide"
+            ></li>
+            <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="1"
+            aria-label="Second slide"
+            ></li>
+            <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="2"
+            aria-label="Third slide"
+            ></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img
+                    src="carusel/carusel 1.webp"
+                    class="w-100 d-block"
+                    alt="First slide"
+                    />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="carusel/carusel 2.webp"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                src="carusel/carusel 3.webp"
+                class="w-100 d-block"
+                alt="Third slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+        <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="prev"
+        >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselId"
+            data-bs-slide="next"
+        >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    
+    <div class="container mt-5" style="color: black;">
+        <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist" style="color: black;">
+            <li class="nav-item"><a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New Arrival</a></li>
+            <li class="nav-item"><a class="nav-link" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">Value Meal Box-Delivery Exclusive</a></li>
+            <li class="nav-item"><a class="nav-link" id="services-tab" data-bs-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Super Savor Deals-Delivery Exclusive</a></li>
+            <li class="nav-item"><a class="nav-link" id="products-tab" data-bs-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="false">Sliders - Party In A Box</a></li>
+            <li class="nav-item"><a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Share The Goodness</a></li>
+            <li class="nav-item"><a class="nav-link" id="blog-tab" data-bs-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="false">Mighty Combos</a></li>
+            <li class="nav-item"><a class="nav-link" id="portfolio-tab" data-bs-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Family Combos</a></li>
+            <li class="nav-item"><a class="nav-link" id="testimonials-tab" data-bs-toggle="tab" href="#testimonials" role="tab" aria-controls="testimonials" aria-selected="false">Beef Burgers</a></li>
+            <li class="nav-item"><a class="nav-link" id="faq-tab" data-bs-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false">Premium Burgers</a></li>
+            <li class="nav-item"><a class="nav-link" id="careers-tab" data-bs-toggle="tab" href="#careers" role="tab" aria-controls="careers" aria-selected="false">Crispy Chicken Burgers</a></li>
+        </ul>
+    
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">New Arrival Content</div>
+            <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">Value Meal Box Content</div>
+            <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">Super Savor Deals Content</div>
+            <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">Sliders Content</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Share The Goodness Content</div>
+            <div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab">Mighty Combos Content</div>
+            <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">Family Combos Content</div>
+            <div class="tab-pane fade" id="testimonials" role="tabpanel" aria-labelledby="testimonials-tab">Beef Burgers Content</div>
+            <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">Premium Burgers Content</div>
+            <div class="tab-pane fade" id="careers" role="tabpanel" aria-labelledby="careers-tab">Crispy Chicken Burgers Content</div>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="input-group" style="position: relative;">
+       <input type="text"class="form-control" style="border: 2px solid rgb(183, 183, 103); border-radius: 20px; padding-right: 30px;">
+       <i class="fa-solid fa-arrow-right"  style=" position:absolute; right: 10px; top: 50%; transform: translateY(-50%); color: rgb(173, 173, 87)"></i> <!-- Right Arrow Icon inside input -->
+    
+    </div>
+        </div>
+    
+</header>
+
+    <main>
+
+        <div style="display: flex; justify-content: center;">
+            <h1>New Arrival</h1>
+        </div>
+
+  <div class="container">
+     <div class="row">
+        <div  class="card" style="width: 18rem;  border-radius: 20px;">
+            <img src="cards/card.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title" style="display: flex; justify-content: center;">Beef Mushroom Madness</h6>
+              <br>
+              <h6 class="card-text" style="display: flex; justify-content: center;">Smashed Beef Patty topped with imported mushrooms, perfectly sauteed onions, and melty cheese slice with signature BOC secret sauce.</h6>
+              <p style="background-color: rgba(220, 28, 28, 0.714); border-radius: 10px; display: flex; justify-content: center;">RS.799</p>
+              <button style="  border-radius:10px;display: flex; justify-content:center;" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Add To Cart
+                </button>
+            </div>
+     </div>
+  </div>
+
+        <!-- Modal -->
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Beef Mushroom Madness</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type=""></button>
+                </div>
+                <div class="modal-body">
+                  <div  style="width: 100%; display: flex; height: 100%;">
+                    <div style="width: 80%; padding-right: 10px;">
+                      <img src="cards/card.webp" alt=""  width="100%">
+                     </div>
+                     <hr style="border-left: 2px solid rgb(0, 0, 0); height: 500px; margin: 0;">
+                     <div style="width: 150%;">
+                      <div>
+                         <h3>Beef Mushroom Madness</h3>
+                         <h5>Rs.799</h5>
+                         <h6>Smashed Beef Patty topped with imported mushrooms, perfectly sauteed onions, and melty cheese slice with signature BOC secret sauce.</h6>
+                      </div>
+          
+                      <br>
+                          
+                      <h4>Special Instructions</h4>
+                      <div style="width: 100%; height: 30%;" class="input-group">
+                        <input type="text" class="form-control" placeholder="Please enter instructions about this item">
+                      </div>
+                     </div>
+                  </div>
+          
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-light">-</button>
+                  1
+                  <button class="btn btn-warning">+</button>
+                  <button style="width: 50%;" type="button" class="btn btn-warning">Add To Cart-799</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+       <div style="display: flex; justify-content: center;">
+           <h1>Value Meal Box-Delivery Exclusive</h1>
+       </div>
+       <!-- card -->
+       <div class="container">
+        <div class="row">
+           <div  class="card" style="width: 18rem;  border-radius: 20px;">
+               <img src="cards/card 2.webp" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h6 class="card-title" style="display: flex; justify-content: center;">Value Meal box</h6>
+                 <br>
+                 <h6 class="card-text" style="display: flex; justify-content: center;">Any 2 burgers from crispy chicken OR Fiery Chicken, 1 gourmet fries from MAyo Garlic OR Wild Fries with 2 soft drinks</h6>
+                 <p style="background-color: rgba(220, 28, 28, 0.714); border-radius: 10px; display: flex; justify-content: center;">RS.1399</p>
+                 <button style="  border-radius:10px;display: flex; justify-content:center;" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                     Add To Cart
+                   </button>
+               </div>
+        </div> 
+     </div>
+   <!-- modal -->
+   <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content overflow-y-scroll">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body overflow-y-scroll" >
+          <div style="width: 100%; display: flex; height: 100%;">
+            <div style="width: 80%; padding-right: 10px;">
+             <img src="cards/card 2.webp" alt=""  width="100%">
+            </div>
+            <hr style="border-left: 2px solid rgb(0, 0, 0); height: 1500px; margin: 0;">
+
+            <div style="width: 150%;">
+                 <div>
+                    <h4></h4>
+                    <h5>Rs.1399</h5>
+                    <p>Any 2 burgers from crispy chicken OR Fiery Chicken, 1 gourmet fries from MAyo Garlic OR Wild Fries with 2 soft drinks</p>
+                 </div>
+
+                 <div style="display: flex; justify-content: space-between;">
+                    <h4>Value Burger- 01</h4>
+                   <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                  </div>
+
+
+                 
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="burger" id="buger"  value="burger">
+                    <label for="Papsi"  style="flex-grow: 1;">Crispy chicken </label>
+                    <img src="images/img1.webp" alt="" width="20%">
+                  </div>
+                  <hr>
+
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="burger" id="buger"  value="buger">
+                    <label for="burger" style="flex-grow: 1;">Fiery chicken</label>
+                    <img src="images/img2.webp" alt="" width="20%">
+                  </div>
+                  <hr>
+
+                  <div style="display: flex; justify-content: space-between;">
+                    <h4>Value Burger- 02</h4>
+                   <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                  </div>
+
+
+                 
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="burger" id="buger"  value="burger">
+                    <label for="Papsi"  style="flex-grow: 1;">Crispy chicken </label>
+                    <img src="images/img1.webp" alt="" width="20%">
+                  </div>
+                  <hr>
+
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="burger" id="buger"  value="buger">
+                    <label for="burger" style="flex-grow: 1;">Fiery chicken</label>
+                    <img src="images/img2.webp" alt="" width="20%">
+                  </div>
+                  <hr>
+
+
+                  
+
+                  <div style="display: flex; justify-content: space-between;">
+                    <h4>select your Drink</h4>
+                   <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                  </div>
+
+
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="bottle" id="papsi"  value="papsi">
+                    <label for="Papsi"  style="flex-grow: 1;"> Papsi</label>
+                    <img src="images/img 2.webp" alt="" width="10%">
+                  </div>
+                  <hr>
+
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="bottle" id="pakola"  value="pakola">
+                    <label for="pakola" style="flex-grow: 1;">coke</label>
+                    <img src="images/img  1.webp" alt="" width="10%">
+                  </div>
+                  <hr>
+
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="bottle" id="mirinda"  value="mirinda">
+                    <label for="mirinda" style="flex-grow: 1;">Mirinda</label>
+                    <img src="images/img 3.webp" alt="" width="10%">
+                  </div>
+                  <hr>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="bottle" id="7up"  value="7up">
+                    <label for="7up" style="flex-grow: 1;">7up</label>
+                    <img src="images/img 5.webp" alt="" width="10%">
+                  </div>
+                  <hr>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="bottle" id="diet 7up"  value="diet 7up">
+                    <label for="Diet 7up" style="flex-grow: 1;">Diet 7up</label>
+                    <img src="images/img 6.webp" alt="" width="10%">
+                  </div>
+                  <hr>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <input type="radio" name="bottle" id="diet papsi"  value=" diet papsi">
+                    <label for=" diet Papsi" style="flex-grow: 1;"> Deit Papsi</label>
+                    <img src="images/img 7.webp" alt="" width="10%">
+                  </div>
+                  <hr>
+
+                  <h4>Special Instructions</h4>
+                  <div style="width: 100%; height: 10%;" class="input-group">
+                    <input type="text" class="form-control" placeholder="Please enter instructions about this item">
+                  </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="modal-footer">
+            <button class="btn btn-light">-</button>
+            1
+            <button class="btn btn-warning">+</button>
+            <button style="width: 50%;" type="button" class="btn btn-warning">Add To Cart-Rs.550</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <br><br><br>
+     <!-- next card  -->
+  <div style="display: flex; justify-content: center;">
+    <h1>Super Savor Deals-Delivery Exclusive</h1>
+  </div>
+  <br>
+       <!-- banner -->
+            <img src="banner/banner 1.webp" alt="" width="100%">
+
+            <!-- card -->
+<div class="container">
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <img src="cards/card 3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Super Savor Deal 01</h5>
+              <p class="card-text">Any one Value Burger from Crispy Chicken OR Fiery Chicken with 1 Drink.</p>
+              <p style="background-color: rgba(220, 28, 28, 0.714); border-radius: 10px; display: flex; justify-content: center;">RS.1399</p>
+              <br>
+              <button style="  border-radius:10px;display: flex; justify-content:center;" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- modal -->
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content overflow-y-scroll">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel2"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body overflow-y-scroll" >
+                  <div style="width: 100%; display: flex; height: 100%;">
+                    <div style="width: 80%; padding-right: 10px;">
+                     <img src="cards/card 3.webp" alt=""  width="100%">
+                    </div>
+                    <hr style="border-left: 2px solid rgb(0, 0, 0); height: 1500px; margin: 0;">
+        
+                    <div style="width: 150%;">
+                         <div>
+                            <h4>Super Savor Deal 01</h4>
+                            <h5>Rs.599</h5>
+                            <p>Any one Value Burger from Crispy Chicken OR Fiery Chicken with 1 Drink</p>
+                         </div>
+        
+                         <div style="display: flex; justify-content: space-between;">
+                            <h4>Value Burger- 01</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                         
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="burger">
+                            <label for="Papsi"  style="flex-grow: 1;">Crispy chicken </label>
+                            <img src="images/img1.webp" alt="" width="20%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="buger">
+                            <label for="burger" style="flex-grow: 1;">Fiery chicken</label>
+                            <img src="images/img2.webp" alt="" width="20%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between;">
+                            <h4>Value Burger- 02</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                         
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="burger">
+                            <label for="Papsi"  style="flex-grow: 1;">Crispy chicken </label>
+                            <img src="images/img1.webp" alt="" width="20%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="buger">
+                            <label for="burger" style="flex-grow: 1;">Fiery chicken</label>
+                            <img src="images/img2.webp" alt="" width="20%">
+                          </div>
+                          <hr>
+        
+        
+                          
+        
+                          <div style="display: flex; justify-content: space-between;">
+                            <h4>select your Drink</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="papsi"  value="papsi">
+                            <label for="Papsi"  style="flex-grow: 1;"> Papsi</label>
+                            <img src="images/img 2.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="pakola"  value="pakola">
+                            <label for="pakola" style="flex-grow: 1;">coke</label>
+                            <img src="images/img  1.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="mirinda"  value="mirinda">
+                            <label for="mirinda" style="flex-grow: 1;">Mirinda</label>
+                            <img src="images/img 3.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="7up"  value="7up">
+                            <label for="7up" style="flex-grow: 1;">7up</label>
+                            <img src="images/img 5.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="diet 7up"  value="diet 7up">
+                            <label for="Diet 7up" style="flex-grow: 1;">Diet 7up</label>
+                            <img src="images/img 6.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="diet papsi"  value=" diet papsi">
+                            <label for=" diet Papsi" style="flex-grow: 1;"> Deit Papsi</label>
+                            <img src="images/img 7.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <h4>Special Instructions</h4>
+                          <div style="width: 100%; height: 10%;" class="input-group">
+                            <input type="text" class="form-control" placeholder="Please enter instructions about this item">
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <div class="modal-footer">
+                    <button class="btn btn-light">-</button>
+                    1
+                    <button class="btn btn-warning">+</button>
+                    <button style="width: 50%;" type="button" class="btn btn-warning">Add To Cart-Rs.550</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="cards/card 4.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Super Savor Deal 02</h5>
+              <br>
+              <p class="card-text">1 Fire Bird Burger, 1 Drink.</p>
+              <br>
+              <p style="background-color: rgba(220, 28, 28, 0.714); border-radius: 10px; display: flex; justify-content: center;">RS.1399</p>
+
+              <br>
+              <button style="  border-radius:10px;display: flex; justify-content:center;" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- modal -->
+
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content overflow-y-scroll">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel3"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body overflow-y-scroll" >
+                  <div style="width: 100%; display: flex; height: 100%;">
+                    <div style="width: 80%; padding-right: 10px;">
+                     <img src="cards/card 4.webp" alt=""  width="100%">
+                    </div>
+                    <hr style="border-left: 2px solid rgb(0, 0, 0); height: 1500px; margin: 0;">
+        
+                    <div style="width: 150%;">
+                         <div>
+                            <h4>Super Savor Deal 02</h4>
+                            <h5>Rs.599</h5>
+                            <p>Any one Value Burger from Crispy Chicken OR Fiery Chicken with 1 Drink</p>
+                         </div>
+        
+                         <div style="display: flex; justify-content: space-between;">
+                            <h4>CHOOSE your Burger</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                         
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="burger">
+                            <label for="Papsi"  style="flex-grow: 1;">Fire Bird </label>
+                            <img src="images/img1.webp" alt="" width="10%">
+                          </div>
+                          <hr>                        
+        
+                          <div style="display: flex; justify-content: space-between;">
+                            <h4>select your Drink</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="papsi"  value="papsi">
+                            <label for="Papsi"  style="flex-grow: 1;"> Papsi</label>
+                            <img src="images/img 2.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="pakola"  value="pakola">
+                            <label for="pakola" style="flex-grow: 1;">coke</label>
+                            <img src="images/img  1.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="mirinda"  value="mirinda">
+                            <label for="mirinda" style="flex-grow: 1;">Mirinda</label>
+                            <img src="images/img 3.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="7up"  value="7up">
+                            <label for="7up" style="flex-grow: 1;">7up</label>
+                            <img src="images/img 5.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="diet 7up"  value="diet 7up">
+                            <label for="Diet 7up" style="flex-grow: 1;">Diet 7up</label>
+                            <img src="images/img 6.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="diet papsi"  value=" diet papsi">
+                            <label for=" diet Papsi" style="flex-grow: 1;"> Deit Papsi</label>
+                            <img src="images/img 7.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <h4>Special Instructions</h4>
+                          <div style="width: 100%; height: 10%;" class="input-group">
+                            <input type="text" class="form-control" placeholder="Please enter instructions about this item">
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <div class="modal-footer">
+                    <button class="btn btn-light">-</button>
+                    1
+                    <button class="btn btn-warning">+</button>
+                    <button style="width: 50%;" type="button" class="btn btn-warning">Add To Cart-Rs.550</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- card 3 -->
+
+          <div class="card" style="width: 18rem;">
+            <img src="cards/card 5.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Super Savor Deal 03</h5>
+              <h5 class="card-text">Any One Wrap from creamy, Fiery and Smoky with 1 drink.</h5>
+              <br>
+              <p style="background-color: rgba(220, 28, 28, 0.714); border-radius: 10px; display: flex; justify-content: center;">RS.1399</p>
+              <br>
+              <button style="  border-radius:10px;display: flex; justify-content:center;" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- modal -->
+
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content overflow-y-scroll">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel4"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body overflow-y-scroll" >
+                  <div style="width: 100%; display: flex; height: 100%;">
+                    <div style="width: 80%; padding-right: 10px;">
+                     <img src="cards/card 5.webp" alt=""  width="100%">
+                    </div>
+                    <hr style="border-left: 2px solid rgb(0, 0, 0); height: 1500px; margin: 0;">
+        
+                    <div style="width: 150%;">
+                         <div>
+                            <h4>Super Savor Deal 03</h4>
+                            <h5>Rs.699</h5>
+                            <p>Any One Wrap from creamy, Fiery and Smoky with 1 drink</p>
+                         </div>
+        
+                         <div style="display: flex; justify-content: space-between;">
+                            <h4>Wrap</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                         
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="burger">
+                            <label for="Papsi"  style="flex-grow: 1;">Creamy</label>
+                            <img src="images/img 8.webp" alt="" width="10%">
+                          </div>
+                          <hr>                        
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="burger">
+                            <label for="Papsi"  style="flex-grow: 1;">Spicy</label>
+                            <img src="images/img 9.webp" alt="" width="10%">
+                          </div>
+                          <hr>                        
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="burger" id="buger"  value="burger">
+                            <label for="Papsi"  style="flex-grow: 1;">Smoky </label>
+                            <img src="images/img 10.webp" alt="" width="10%">
+                          </div>
+                          <hr>                        
+        
+                          <div style="display: flex; justify-content: space-between;">
+                            <h4>select your Drink</h4>
+                           <button style="width: 15%; height: 5%; color: white;" type="button" class="btn btn-warning">required</button>
+                          </div>
+        
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="papsi"  value="papsi">
+                            <label for="Papsi"  style="flex-grow: 1;"> Papsi</label>
+                            <img src="images/img 2.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="pakola"  value="pakola">
+                            <label for="pakola" style="flex-grow: 1;">coke</label>
+                            <img src="images/img  1.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="mirinda"  value="mirinda">
+                            <label for="mirinda" style="flex-grow: 1;">Mirinda</label>
+                            <img src="images/img 3.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="7up"  value="7up">
+                            <label for="7up" style="flex-grow: 1;">7up</label>
+                            <img src="images/img 5.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="diet 7up"  value="diet 7up">
+                            <label for="Diet 7up" style="flex-grow: 1;">Diet 7up</label>
+                            <img src="images/img 6.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+                          <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <input type="radio" name="bottle" id="diet papsi"  value=" diet papsi">
+                            <label for=" diet Papsi" style="flex-grow: 1;"> Deit Papsi</label>
+                            <img src="images/img 7.webp" alt="" width="10%">
+                          </div>
+                          <hr>
+        
+                          <h4>Special Instructions</h4>
+                          <div style="width: 100%; height: 10%;" class="input-group">
+                            <input type="text" class="form-control" placeholder="Please enter instructions about this item">
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <div class="modal-footer">
+                    <button class="btn btn-light">-</button>
+                    1
+                    <button class="btn btn-warning">+</button>
+                    <button style="width: 50%;" type="button" class="btn btn-warning">Add To Cart-Rs.550</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+            
+    </main>
+
+</body>
+</html>

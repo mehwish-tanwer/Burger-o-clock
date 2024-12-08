@@ -1,0 +1,55 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.jpg?t=st=1719392834~exp=1719396434~hmac=515e57bb67eb679351985cf241214fe3ebadce945799e6505bf3fc24a82960e8&w=826'); /* Link to your image */
+    background-size: cover; /* Makes the image cover the whole page */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensures the page takes full viewport height */
+}
+*{
+margin: 2px;
+padding: 1px;
+gap: 0px;
+}
+
+header div h1{
+justify-content: center ;
+}
+.modal-dialog {
+max-width: 70%; 
+margin: 2px;
+}
+
+.modal-content {
+border-radius: 10px; 
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.input-group input {
+border-radius: 20px;
+}
+
+
+
+.input-group button {
+background-color: black;
+color: white;
+border-radius: 10px;
+border: none;
+}
+
+.nav-tabs {
+flex-wrap: nowrap; /* Prevent wrapping of tabs */
+overflow-x: auto;  /* Enable horizontal scrolling */
+margin-top: 10px; /* Adjust this as needed to control space */
+}
+
+.nav-tabs .nav-link {
+white-space: nowrap; /* Prevent text wrapping */
+}
+
+.container{
+margin-top: 20px; /* Adjust as necessary */
+
+}
